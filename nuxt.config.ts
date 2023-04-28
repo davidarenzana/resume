@@ -24,11 +24,11 @@ export default defineNuxtConfig({
 
   i18n: {
     lazy: true,
-    langDir: 'locales',
+    langDir: 'locales/',
     strategy: 'prefix_except_default',
     locales: [
-      { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.yml' },
-      { code: 'ca', iso: 'ca-ES', name: 'Català', file: 'ca.yml' },
+      { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'ca', iso: 'ca-ES', name: 'Català', file: 'ca.json' },
     ],
     defaultLocale: 'es',
   },

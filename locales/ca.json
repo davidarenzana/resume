@@ -1,0 +1,138 @@
+{
+  "name": "David Arenzana",
+  "job": "Marketing & Frontend Developer",
+  "linkedin": "https://linkedin.com/in/davidarenzana/",
+  "github": "https://github.com/davidarenzana",
+  "profile_title": "Perfil",
+  "profile_description": "Maño de nacimiento, pucelano de corazón y catalán de adopción. Autodidacta buscando siempre estar a la última.",
+  "phone": "+34 666 375 922",
+  "email": "davidarenzana{'@'}calidae.com",
+  "address": "C/ Ramón y Cajal, 8",
+  "city": "Caldes de Montbui",
+  "postal_code": "08140",
+  "country": "Barcelona",
+  "study_title": "Estudios",
+  "studies": [
+    {
+      "title": "Grado Multimédia",
+      "date": "2011 - 2018",
+      "location": "UOC, Universitat Oberta de Catalunya"
+    },
+    {
+      "title": "Aplicaciones en Redes",
+      "date": "2002",
+      "location": "SDI, Escuela SDI (359 horas)"
+    },
+    {
+      "title": "Diseño Gráfico",
+      "date": "1998 - 2001",
+      "location": "ESI, Escuela de Sistemas Informáticos (Valladolid)"
+    }
+  ],
+  "Languages_title": "Idiomas",
+  "languages": [
+    {
+      "name": "Castellano",
+      "level": "Nativo"
+    },
+    {
+      "name": "Catalán",
+      "level": "C1"
+    },
+    {
+      "name": "Inglés",
+      "level": "B2"
+    }
+  ],
+  "hobbies_title": "hobbies",
+  "hobbies": [
+    {
+      "name": "Travel",
+      "icon": "icon-travel"
+    },
+    {
+      "name": "Cooking",
+      "icon": "icon-cooking"
+    },
+    {
+      "name": "Bolets",
+      "icon": "icon-bolets"
+    },
+    {
+      "name": "Gaming",
+      "icon": "icon-gaming"
+    },
+    {
+      "name": "Sports",
+      "icon": "icon-sports"
+    }
+  ],
+  "experience_title": "Experiencia",
+  "experience": [
+    {
+      "job": "Diseñador web Marketing Digital",
+      "company": "Sistemes I Xarxes informàtiques Calidae SL - kiwimbi",
+      "date": "2017 - now",
+      "tasks": [
+        { "name": "Programación y diseño de páginas web" },
+        { "name": "Desarrollo frontend de aplicaciones" },
+        { "name": "Desarrollo web wordpress" },
+        { "name": "Desarrollo templates - modules hubspot" },
+        { "name": "Auditorías SEO técnico" },
+        { "name": "Implementación GA4 - GTM" },
+        { "name": "Formación wordpress a clientes" }
+      ]
+    },
+    {
+      "job": "Responsable del Dpt Técnico y Administrativo",
+      "company": "Ediciones Rosacruces",
+      "date": "2011 - 2017",
+      "tasks": [
+        {
+          "name": "Gestión web. Diseño y maquetación de libros, preparación y seguimientos de pedidos, facturación"
+        }
+      ]
+    },
+    {
+      "job": "Coordinador de Centro Cívico",
+      "company": "Centre Cívic Ca l'Artigues",
+      "date": "2010",
+      "tasks": [
+        {
+          "name": "Coordinación de actividades, horarios y atención al público"
+        }
+      ]
+    },
+    {
+      "job": "Diseñador web Marketing Digital",
+      "company": "Freelance",
+      "date": "2002 - 2017",
+      "tasks": [
+        {
+          "name": "Programación y diseño de páginas webs. Trabajos de SEO - SEM"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    { "name": "https://blog.panasonic.es/lumix/" },
+    { "name": "https://larevoluciondelostejados.holaluz.com/solar_lp/" },
+    { "name": "https://www.touristforum.net/" },
+    { "name": "https://medicinaesportiva.cat/" },
+    { "name": "https://abaclegal.com/" },
+    { "name": "https://www.pursangmotorcycles.com/" }
+  ],
+  "skills": [
+    { "name": "HTML5" },
+    { "name": "CSS/SCSS" },
+    { "name": "JAVASCRIPT" },
+    { "name": "VUE" },
+    { "name": "NUXT" },
+    { "name": "WORDPRESS" },
+    { "name": "HUBSPOT" },
+    { "name": "PHP" },
+    { "name": "GIT" },
+    { "name": "AGILE" },
+    { "name": "KANBAN" }
+  ]
+}
