@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-
 </script>
-
 
 <template>
   <div>
@@ -17,13 +15,3 @@ const { t } = useI18n()
 
 <style lang="scss" scoped></style>
 
-<i18n lang="yml">
-
-  es: 
-    "hello": "Hola world!"
-  
-  ca: 
-    "hello": "hello mon"
-  
-
-</i18n>

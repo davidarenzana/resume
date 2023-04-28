@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Calidae · Digital Craftsmanship',
+      title: 'My Site',
       meta: [{ name: 'description', content: 'My amazing site.' }],
     },
   },
@@ -23,10 +23,12 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n'],
 
   i18n: {
+    lazy: true,
+    langDir: 'locales',
     strategy: 'prefix_except_default',
     locales: [
-      { code: 'es', iso: 'es-ES', name: 'Español' },
-      { code: 'ca', iso: 'ca-ES', name: 'Català' },
+      { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.yml' },
+      { code: 'ca', iso: 'ca-ES', name: 'Català', file: 'ca.yml' },
     ],
     defaultLocale: 'es',
   },
