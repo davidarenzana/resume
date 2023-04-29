@@ -61,7 +61,7 @@ const { tm, rt } = useI18n()
 header,
 .content {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1080px;
 }
 
 .content {
