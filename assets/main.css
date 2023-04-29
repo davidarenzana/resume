@@ -4,13 +4,14 @@
   --blue-color: #157698;
   --dark-gray-color: #333333;
   --light-gray-color: #666666;
+  --lighter-gray-color: #a9a9a9;
   --white-color: #ffffff;
   --black-color: #000000;
+  font-size: 18px;
 }
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -24,4 +25,31 @@ body {
   font-weight: 200;
   color: var(--light-gray-color);
   transition: all 0.2s;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+h2 {
+  color: var(--blue-color);
+  font-size: 2rem;
+}
+
+hr {
+  border-top: 1px solid var(--lighter-gray-color);
+  border-bottom: 0;
+}
+
+.color-blue {
+  color: var(--blue-color);
+}
+
+.color-lighter-gray {
+  color: var(--lighter-gray-color);
+}
+
+.font-200 {
+  font-weight: 200;
 }

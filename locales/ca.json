@@ -30,7 +30,7 @@
       "location": "ESI, Escuela de Sistemas Informáticos (Valladolid)"
     }
   ],
-  "LanguagesTitle": "Idiomas",
+  "languagesTitle": "Idiomas",
   "languages": [
     {
       "name": "Castellano",
@@ -45,7 +45,7 @@
       "level": "B2"
     }
   ],
-  "hobbiesTitle": "hobbies",
+  "hobbiesTitle": "Hobbies",
   "hobbies": [
     {
       "name": "Travel",
@@ -115,6 +115,7 @@
       ]
     }
   ],
+  "projectsTitle": "Últimos Projectos",
   "projects": [
     { "name": "https://blog.panasonic.es/lumix/" },
     { "name": "https://larevoluciondelostejados.holaluz.com/solar_lp/" },
@@ -123,6 +124,7 @@
     { "name": "https://abaclegal.com/" },
     { "name": "https://www.pursangmotorcycles.com/" }
   ],
+  "skillsTitle": "Skills",
   "skills": [
     { "name": "HTML5" },
     { "name": "CSS/SCSS" },
@@ -133,7 +135,7 @@
     { "name": "HUBSPOT" },
     { "name": "PHP" },
     { "name": "GIT" },
-    { "name": "AGILE" },
+    { "name": "FIGMA" },
     { "name": "KANBAN" }
   ]
 }

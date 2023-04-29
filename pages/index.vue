@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { tm, rt } = useI18n()
-const studies = tm('studies')
 </script>
 
 <template>
@@ -8,12 +7,45 @@ const studies = tm('studies')
     <TheHeader />
     <div class="content">
       <aside>
-
-        <ul>
-          <li v-for="item in studies" :key="item">{{ rt(item.title) }}</li>
-        </ul>
+        <CardContent :title="$t('profileTitle')">
+          <BaseTextIcon social="phone" />
+          <BaseTextIcon social="email" />
+          <BaseTextIcon social="address" />
+          <BaseTextIcon social="location" />
+        </CardContent>
+        <CardContent :title="$t('studiesTitle')">
+          <ul>
+            <li v-for="item in tm('studies')" :key="item">{{ rt(item.title) }}</li>
+          </ul>
+        </CardContent>
+        <CardContent :title="$t('languagesTitle')">
+          <ul>
+            <li v-for="item in tm('languages')" :key="item">{{ rt(item.name) }}</li>
+          </ul>
+        </CardContent>
+        <CardContent :title="$t('hobbiesTitle')">
+          <ul>
+            <li v-for="item in tm('hobbies')" :key="item">{{ rt(item.name) }}</li>
+          </ul>
+        </CardContent>
       </aside>
-      <main>content</main>
+      <main>
+        <CardContent :title="$t('experienceTitle')">
+          <ul>
+            <li v-for="item in tm('experience')" :key="item">{{ rt(item.job) }}</li>
+          </ul>
+        </CardContent>
+        <CardContent :title="$t('projectsTitle')">
+          <ul>
+            <li v-for="item in tm('projects')" :key="item">{{ rt(item.name) }}</li>
+          </ul>
+        </CardContent>
+        <CardContent :title="$t('skillsTitle')">
+          <ul>
+            <li v-for="item in tm('skills')" :key="item">{{ rt(item.name) }}</li>
+          </ul>
+        </CardContent>
+      </main>
     </div>
   </div>
 </template>
