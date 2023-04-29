@@ -1,17 +1,18 @@
 {
-  "name": "David Arenzana",
+  "firstName": "David",
+  "lastName": "Arenzana",
   "job": "Marketing & Frontend Developer",
   "linkedin": "https://linkedin.com/in/davidarenzana/",
   "github": "https://github.com/davidarenzana",
-  "profile_title": "Perfil",
-  "profile_description": "Maño de nacimiento, pucelano de corazón y catalán de adopción. Autodidacta buscando siempre estar a la última.",
+  "profileTitle": "Perfil",
+  "profileDescription": "Maño de nacimiento, pucelano de corazón y catalán de adopción. Autodidacta buscando siempre estar a la última.",
   "phone": "+34 666 375 922",
   "email": "davidarenzana{'@'}calidae.com",
   "address": "C/ Ramón y Cajal, 8",
   "city": "Caldes de Montbui",
-  "postal_code": "08140",
+  "postalCode": "08140",
   "country": "Barcelona",
-  "studies_title": "Estudios",
+  "studiesTitle": "Estudios",
   "studies": [
     {
       "title": "Grado Multimédia",
@@ -29,7 +30,7 @@
       "location": "ESI, Escuela de Sistemas Informáticos (Valladolid)"
     }
   ],
-  "Languages_title": "Idiomas",
+  "LanguagesTitle": "Idiomas",
   "languages": [
     {
       "name": "Castellano",
@@ -44,7 +45,7 @@
       "level": "B2"
     }
   ],
-  "hobbies_title": "hobbies",
+  "hobbiesTitle": "hobbies",
   "hobbies": [
     {
       "name": "Travel",
@@ -67,7 +68,7 @@
       "icon": "icon-sports"
     }
   ],
-  "experience_title": "Experiencia",
+  "experienceTitle": "Experiencia",
   "experience": [
     {
       "job": "Diseñador web Marketing Digital",

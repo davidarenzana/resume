@@ -1,23 +1,40 @@
 <script setup lang="ts">
-const { t, tm } = useI18n()
-function normalize([v]: string[]) {
-  return v
-}
+const { tm, rt } = useI18n()
 const studies = tm('studies')
 </script>
 
 <template>
-  <div>
-    <header>
-      <h1>{{ t('title') }}</h1>
-      <ul>
-        <li v-for="item in studies" :key="item">{{ item.title({ normalize }) }}</li>
-      </ul>
-    </header>
-    <aside>sidebar</aside>
-    <main>content</main>
+  <div class="container">
+    <TheHeader />
+    <div class="content">
+      <aside>
+
+        <ul>
+          <li v-for="item in studies" :key="item">{{ rt(item.title) }}</li>
+        </ul>
+      </aside>
+      <main>content</main>
+    </div>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header,
+.content {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+</style>
 
