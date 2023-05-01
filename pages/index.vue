@@ -18,7 +18,9 @@ const { tm, rt } = useI18n()
         </CardContent>
         <CardContent :title="$t('languagesTitle')">
           <ul>
-            <li v-for="item in tm('languages')" :key="item">{{ rt(item.name) }}: {{ rt(item.level) }}</li>
+            <li v-for="item in tm('languages')" :key="item">
+              {{ rt(item.name) }}: {{ rt(item.level) }}
+            </li>
           </ul>
         </CardContent>
         <CardContent :title="$t('hobbiesTitle')">
@@ -35,8 +37,9 @@ const { tm, rt } = useI18n()
         </CardContent>
         <CardContent :title="$t('projectsTitle')">
           <ul class="projects__list">
-            <li v-for="item in tm('projects')" :key="item"><a :href="rt(item.name)" target="_blank">{{ rt(item.name)
-            }}</a></li>
+            <li v-for="item in tm('projects')" :key="item">
+              <a :href="rt(item.name)" target="_blank">{{ rt(item.name) }}</a>
+            </li>
           </ul>
         </CardContent>
         <CardContent :title="$t('skillsTitle')">
@@ -87,7 +90,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .skills__list {
@@ -96,4 +99,3 @@ main {
   gap: 0.5rem;
 }
 </style>
-
