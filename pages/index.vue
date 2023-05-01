@@ -8,40 +8,39 @@ const { tm, rt } = useI18n()
     <div class="content">
       <aside>
         <CardContent :title="$t('profileTitle')">
-          <BaseTextIcon social="phone" />
-          <BaseTextIcon social="email" />
-          <BaseTextIcon social="address" />
-          <BaseTextIcon social="location" />
+          <ProfileContent />
         </CardContent>
         <CardContent :title="$t('studiesTitle')">
           <ul>
-            <li v-for="item in tm('studies')" :key="item">{{ rt(item.title) }}</li>
+            <StudiesCard v-for="item in tm('studies')" :key="item" :title="$rt(item.title)" :date="$rt(item.date)"
+              :location="$rt(item.location)" />
           </ul>
         </CardContent>
         <CardContent :title="$t('languagesTitle')">
           <ul>
-            <li v-for="item in tm('languages')" :key="item">{{ rt(item.name) }}</li>
+            <li v-for="item in tm('languages')" :key="item">{{ rt(item.name) }}: {{ rt(item.level) }}</li>
           </ul>
         </CardContent>
         <CardContent :title="$t('hobbiesTitle')">
-          <ul>
-            <li v-for="item in tm('hobbies')" :key="item">{{ rt(item.name) }}</li>
+          <ul class="hobbies__list">
+            <li v-for="item in tm('hobbies')" :key="item">
+              <HobbyCard :hobby="rt(item.name)" />
+            </li>
           </ul>
         </CardContent>
       </aside>
       <main>
         <CardContent :title="$t('experienceTitle')">
-          <ul>
-            <li v-for="item in tm('experience')" :key="item">{{ rt(item.job) }}</li>
-          </ul>
+          <JobContent />
         </CardContent>
         <CardContent :title="$t('projectsTitle')">
-          <ul>
-            <li v-for="item in tm('projects')" :key="item">{{ rt(item.name) }}</li>
+          <ul class="projects__list">
+            <li v-for="item in tm('projects')" :key="item"><a :href="rt(item.name)" target="_blank">{{ rt(item.name)
+            }}</a></li>
           </ul>
         </CardContent>
         <CardContent :title="$t('skillsTitle')">
-          <ul>
+          <ul class="skills__list">
             <li v-for="item in tm('skills')" :key="item">{{ rt(item.name) }}</li>
           </ul>
         </CardContent>
@@ -50,7 +49,7 @@ const { tm, rt } = useI18n()
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style>
 .container {
   display: flex;
   justify-content: center;
@@ -62,11 +61,39 @@ header,
 .content {
   width: 100%;
   max-width: 1080px;
+  margin: 1rem 0;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+}
+
+aside,
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hobbies__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  font-size: .8rem;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
 }
 </style>
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
 :root {
   --blue-color: #157698;
@@ -8,13 +9,17 @@
   --white-color: #ffffff;
   --black-color: #000000;
   font-size: 18px;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
 }
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -27,27 +32,69 @@ body {
   transition: all 0.2s;
 }
 
+p {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: var(--light-gray-color);
+}
+
+a:hover {
+  color: var(--blue-color);
+  font-weight: 700;
+}
+
 h1 {
   font-size: 4rem;
   text-transform: uppercase;
   margin: 0;
+  line-height: 4rem;
 }
+
 h2 {
-  color: var(--blue-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 2rem;
+  color: var(--blue-color);
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 hr {
   border-top: 1px solid var(--lighter-gray-color);
   border-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .color-blue {
   color: var(--blue-color);
 }
 
+.color-light-gray {
+  color: var(--light-gray-color);
+}
+
 .color-lighter-gray {
   color: var(--lighter-gray-color);
+}
+
+.color-dark-gray {
+  color: var(--dark-gray-color);
 }
 
 .font-200 {

@@ -22,7 +22,7 @@
     {
       "title": "Aplicaciones en Redes",
       "date": "2002",
-      "location": "SDI, Escuela SDI (359 horas)"
+      "location": "SDI, Escuela SDI - Valladolid (359 horas)"
     },
     {
       "title": "Diseño Gráfico",
@@ -136,6 +136,7 @@
     { "name": "PHP" },
     { "name": "GIT" },
     { "name": "FIGMA" },
-    { "name": "KANBAN" }
+    { "name": "KANBAN" },
+    { "name": "GAU - GA4 - GTM" }
   ]
 }

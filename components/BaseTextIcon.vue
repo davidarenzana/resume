@@ -1,15 +1,14 @@
 <script setup lang="ts">
-const { t } = useI18n()
-
 defineProps<{
-  social: string
+  icon: string
+  text: string
 }>()
 </script>
 
 <template>
   <div class="baseTextIcon__container">
-    <img :src="`icon-${social}.svg`" :alt="social" width="18" height="18">
-    <span>{{ t(social) }}</span>
+    <img :src="`icon-${icon}.svg`" :alt="text" width="18" height="18">
+    <span>{{ text }}</span>
   </div>
 </template>
 
@@ -18,5 +17,9 @@ defineProps<{
   display: flex;
   gap: .5rem;
   margin-bottom: 1rem;
+
+  img {
+    margin-top: 5px;
+  }
 }
 </style>
