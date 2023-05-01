@@ -4,7 +4,6 @@
 
 <template>
   <header>
-    <LangSwitcher />
     <div class="theheader">
       <img
         src="/img/david-arenzana-hernandez.jpeg"

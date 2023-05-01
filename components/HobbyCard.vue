@@ -1,37 +1,42 @@
 <script setup lang="ts">
-// const { t } = useI18n()
-
-defineProps<{
-  hobby: string
-}>()
+  defineProps<{
+    hobby: string
+  }>()
 </script>
 
 <template>
   <div class="hobbycard">
-    <div class="hobbycard__icon"><img :src="`icon-${hobby}.svg`" :alt="hobby" height="36" width="36"></div>
+    <div class="hobbycard__icon">
+      <img
+        :src="`icon-${hobby}.svg`"
+        :alt="hobby"
+        height="36"
+        width="36"
+      />
+    </div>
     <p>{{ hobby }}</p>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.hobbycard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .5rem;
-
-  .hobbycard__icon {
+  .hobbycard {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border: 1px dotted var(--blue-color);
-    border-radius: 36px;
-    width: 72px;
-    height: 72px;
-  }
+    gap: 0.5rem;
 
-  p {
-    margin: 0;
+    .hobbycard__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px dotted var(--blue-color);
+      border-radius: 36px;
+      width: 72px;
+      height: 72px;
+    }
+
+    p {
+      margin: 0;
+    }
   }
-}
 </style>

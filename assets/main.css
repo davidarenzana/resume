@@ -3,6 +3,7 @@
 
 :root {
   --blue-color: #157698;
+  --orange-color: #ed9e7d;
   --dark-gray-color: #333333;
   --light-gray-color: #666666;
   --lighter-gray-color: #a9a9a9;
@@ -42,7 +43,7 @@ a {
 
 a:hover {
   color: var(--blue-color);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h1 {
@@ -113,4 +114,14 @@ ul {
 
 .font-200 {
   font-weight: 200;
+}
+
+.dark  * {
+  color: #fff;
+  background-color: #000;
+}
+
+.dark h1,
+.dark h2 {
+  color: var(--orange-color)
 }

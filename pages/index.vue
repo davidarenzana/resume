@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
   const { t, tm, rt } = useI18n()
 
   useHead({
@@ -9,6 +9,7 @@
 
 <template>
   <div class="container">
+    <TopHeader />
     <TheHeader />
     <div class="content">
       <aside>
@@ -139,7 +140,7 @@
     font-size: 0.9rem;
 
     @media (min-width: 1080px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 300px auto;
     }
   }
 

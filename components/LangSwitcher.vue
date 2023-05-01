@@ -22,7 +22,6 @@
   .langswitcher {
     width: 100%;
     max-width: 1080px;
-    margin-bottom: 2rem;
 
     a {
       text-decoration: none;
