@@ -4,47 +4,51 @@
 
 <template>
   <header>
-    <img
-      src="/img/david-arenzana-hernandez.jpeg"
-      alt="David Arenzana Hernandez"
-    />
-    <div class="theheader__content">
-      <h1 class="color-blue">
-        {{ t('firstName') }}
-        <span class="color-lighter-gray font-200">{{ t('lastName') }}</span>
-      </h1>
-      <p class="theheader__job color-blue">{{ t('job') }}</p>
-      <hr />
-      <ul class="theheader__links">
-        <li>
-          <a
-            :href="t('linkedin')"
-            target="_blank"
-          >
-            <BaseTextIcon
-              icon="linkedin"
-              :text="t('linkedin')"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            :href="t('github')"
-            target="_blank"
-          >
-            <BaseTextIcon
-              icon="github"
-              :text="t('github')"
-            />
-          </a>
-        </li>
-      </ul>
+    <LangSwitcher />
+    <div class="theheader">
+      <img
+        src="/img/david-arenzana-hernandez.jpeg"
+        alt="David Arenzana Hernandez"
+        class="theheader__image"
+      />
+      <div class="theheader__content">
+        <h1 class="color-blue">
+          {{ t('firstName') }}
+          <span class="color-lighter-gray font-200">{{ t('lastName') }}</span>
+        </h1>
+        <p class="theheader__job color-blue">{{ t('job') }}</p>
+        <hr />
+        <ul class="theheader__links">
+          <li>
+            <a
+              :href="t('linkedin')"
+              target="_blank"
+            >
+              <BaseTextIcon
+                icon="linkedin"
+                :text="t('linkedin')"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              :href="t('github')"
+              target="_blank"
+            >
+              <BaseTextIcon
+                icon="github"
+                :text="t('github')"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
-  header {
+  .theheader {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -53,7 +57,7 @@
   }
 
   @media (min-width: 768px) {
-    header {
+    .theheader {
       grid-template-columns: 300px 1fr;
     }
   }
@@ -66,6 +70,13 @@
     border-bottom: 1px solid var(--lighter-gray-color);
   }
 
+  .theheader__image {
+    width: 200px;
+    height: auto;
+    @media (min-width: 480px) {
+      width: 300px;
+    }
+  }
   .theheader__job {
     text-transform: uppercase;
     margin-top: 0;
@@ -79,11 +90,14 @@
     list-style-type: none;
     padding-left: 0;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 0.8rem;
-  }
 
-  @media (min-width: 1080px) {
-    .theheader__links {
+    @media (min-width: 786px) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1080px) {
       gap: 3rem;
     }
   }

@@ -1,47 +1,48 @@
 {
   "firstName": "David",
   "lastName": "Arenzana",
+  "metaDescription": "Maño de naixement, pucelano de cor i català d'adopció. Autodidacta buscant sempre estar a l'última en el meu treball. Vols saber més?",
   "job": "Marketing & Frontend Developer",
   "linkedin": "https://linkedin.com/in/davidarenzana/",
   "github": "https://github.com/davidarenzana",
   "profileTitle": "Perfil",
-  "profileDescription": "Maño de nacimiento, pucelano de corazón y catalán de adopción. Autodidacta buscando siempre estar a la última.",
+  "profileDescription": "Maño de naixement, pucelano de cor i català d'adopció. Autodidacta buscant sempre estar a l'última en el meu treball.",
   "phone": "+34 666 375 922",
   "email": "davidarenzana{'@'}calidae.com",
-  "address": "C/ Ramón y Cajal, 8",
+  "address": "C. Ramon i Cajal, 8",
   "city": "Caldes de Montbui",
   "postalCode": "08140",
   "country": "Barcelona",
-  "studiesTitle": "Estudios",
+  "studiesTitle": "Estudis",
   "studies": [
     {
-      "title": "Grado Multimédia",
+      "title": "Grau Multimèdia",
       "date": "2011 - 2018",
       "location": "UOC, Universitat Oberta de Catalunya"
     },
     {
-      "title": "Aplicaciones en Redes",
+      "title": "Aplicacions en Xarxes",
       "date": "2002",
-      "location": "SDI, Escuela SDI (359 horas)"
+      "location": "SDI, Escuela SDI - Valladolid (359 hores)"
     },
     {
-      "title": "Diseño Gráfico",
+      "title": "Diseny Gràfic",
       "date": "1998 - 2001",
       "location": "ESI, Escuela de Sistemas Informáticos (Valladolid)"
     }
   ],
-  "languagesTitle": "Idiomas",
+  "languagesTitle": "Idiomes",
   "languages": [
     {
-      "name": "Castellano",
-      "level": "Nativo"
+      "name": "Castellà",
+      "level": "Nadiu"
     },
     {
-      "name": "Catalán",
+      "name": "Català",
       "level": "C1"
     },
     {
-      "name": "Inglés",
+      "name": "Anglès",
       "level": "B2"
     }
   ],
@@ -68,54 +69,54 @@
       "icon": "icon-sports"
     }
   ],
-  "experienceTitle": "Experiencia",
+  "experienceTitle": "Experiència",
   "experience": [
     {
-      "job": "Diseñador web Marketing Digital",
+      "job": "Desenvolupador web Marketing Digital",
       "company": "Sistemes I Xarxes informàtiques Calidae SL - kiwimbi",
       "date": "2017 - now",
       "tasks": [
-        { "name": "Programación y diseño de páginas web" },
-        { "name": "Desarrollo frontend de aplicaciones" },
-        { "name": "Desarrollo web wordpress" },
-        { "name": "Desarrollo templates - modules hubspot" },
-        { "name": "Auditorías SEO técnico" },
-        { "name": "Implementación GA4 - GTM" },
-        { "name": "Formación wordpress a clientes" }
+        { "name": "Programació i disseny de pàgines web" },
+        { "name": "Desenvolupament frontend" },
+        { "name": "Desenvolupament web wordpress" },
+        { "name": "Desenvolupament templates - modules hubspot" },
+        { "name": "Auditories SEO tècnico" },
+        { "name": "Implementació GA4 - GTM" },
+        { "name": "Formació wordpress a clients" }
       ]
     },
     {
-      "job": "Responsable del Dpt Técnico y Administrativo",
+      "job": "Responsable del Dpt Tècnic i Administratiu",
       "company": "Ediciones Rosacruces",
       "date": "2011 - 2017",
       "tasks": [
         {
-          "name": "Gestión web. Diseño y maquetación de libros, preparación y seguimientos de pedidos, facturación"
+          "name": "Gestió web. Disseny i maquetació de llibres, preparació i seguiments de comandes, facturació"
         }
       ]
     },
     {
-      "job": "Coordinador de Centro Cívico",
+      "job": "Coordinador de Centre Cívic",
       "company": "Centre Cívic Ca l'Artigues",
       "date": "2010",
       "tasks": [
         {
-          "name": "Coordinación de actividades, horarios y atención al público"
+          "name": "Coordinació d'activitats, horaris i atenció al públic"
         }
       ]
     },
     {
-      "job": "Diseñador web Marketing Digital",
+      "job": "Dissenyador web Marketing Digital",
       "company": "Freelance",
       "date": "2002 - 2017",
       "tasks": [
         {
-          "name": "Programación y diseño de páginas webs. Trabajos de SEO - SEM"
+          "name": "Programació i disseny de pàgines webs. Treballs de SEO - SEM"
         }
       ]
     }
   ],
-  "projectsTitle": "Últimos Projectos",
+  "projectsTitle": "Últims Projectes",
   "projects": [
     { "name": "https://blog.panasonic.es/lumix/" },
     { "name": "https://larevoluciondelostejados.holaluz.com/solar_lp/" },
@@ -136,6 +137,7 @@
     { "name": "PHP" },
     { "name": "GIT" },
     { "name": "FIGMA" },
-    { "name": "KANBAN" }
+    { "name": "KANBAN" },
+    { "name": "GAU - GA4 - GTM" }
   ]
 }

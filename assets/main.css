@@ -8,9 +8,6 @@
   --lighter-gray-color: #a9a9a9;
   --white-color: #ffffff;
   --black-color: #000000;
-  font-size: 18px;
-  line-height: 1.5rem;
-  letter-spacing: 0.03rem;
 }
 
 html {
@@ -24,12 +21,15 @@ html {
 }
 
 body {
+  font-size: 18px;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   background-color: var(--white-color);
   font-weight: 200;
   color: var(--light-gray-color);
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 p {
@@ -46,10 +46,17 @@ a:hover {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin: 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 786px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 @media (min-width: 1080px) {
