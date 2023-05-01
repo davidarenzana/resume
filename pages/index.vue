@@ -77,6 +77,7 @@
         </CardContent>
       </main>
     </div>
+    <TheFooter />
   </div>
 </template>
 
@@ -97,8 +98,14 @@
 
   .content {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
+  }
+
+  @media (min-width: 786px) {
+    .content {
+      grid-template-columns: 300px 1fr;
+    }
   }
 
   aside,
@@ -112,6 +119,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    width: 80%;
+
+    @media (min-width: 786px) {
+      width: auto;
+    }
   }
 
   .languages__list {
@@ -122,14 +134,22 @@
 
   .projects__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+
+    @media (min-width: 1080px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .skills__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+
+    @media (min-width: 786px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 </style>
