@@ -27,22 +27,12 @@
           </ul>
         </CardContent>
         <CardContent :title="$t('languagesTitle')">
-          <ul>
+          <ul class="languages__list">
             <li
               v-for="item in tm('languages')"
               :key="item"
             >
               {{ rt(item.name) }}: {{ rt(item.level) }}
-            </li>
-          </ul>
-        </CardContent>
-        <CardContent :title="$t('hobbiesTitle')">
-          <ul class="hobbies__list">
-            <li
-              v-for="item in tm('hobbies')"
-              :key="item"
-            >
-              <HobbyCard :hobby="rt(item.name)" />
             </li>
           </ul>
         </CardContent>
@@ -75,12 +65,22 @@
             </li>
           </ul>
         </CardContent>
+        <CardContent :title="$t('hobbiesTitle')">
+          <ul class="hobbies__list">
+            <li
+              v-for="item in tm('hobbies')"
+              :key="item"
+            >
+              <HobbyCard :hobby="rt(item.name)" />
+            </li>
+          </ul>
+        </CardContent>
       </main>
     </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
   .container {
     display: flex;
     justify-content: center;
@@ -112,6 +112,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+  }
+
+  .languages__list {
+    li + li {
+      margin-top: 1rem;
+    }
   }
 
   .projects__list {

@@ -1,25 +1,29 @@
 <script setup lang="ts">
-defineProps<{
-  icon: string
-  text: string
-}>()
+  defineProps<{
+    icon: string
+    text: string
+  }>()
 </script>
 
 <template>
   <div class="baseTextIcon__container">
-    <img :src="`icon-${icon}.svg`" :alt="text" width="18" height="18">
+    <img
+      :src="`icon-${icon}.svg`"
+      :alt="text"
+      width="18"
+      height="18"
+    />
     <span>{{ text }}</span>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.baseTextIcon__container {
-  display: flex;
-  gap: .5rem;
-  margin-bottom: 1rem;
+  .baseTextIcon__container {
+    display: flex;
+    gap: 0.5rem;
 
-  img {
-    margin-top: 5px;
+    img {
+      margin-top: 5px;
+    }
   }
-}
 </style>
