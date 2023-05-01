@@ -1,5 +1,10 @@
 <script setup lang="ts">
-const { tm, rt } = useI18n()
+  const { t, tm, rt } = useI18n()
+
+  useHead({
+    title: `${t('firstName')} ${t('lastName')} - Este Soy Yo`,
+    meta: [{ name: 'description', content: t('metaDescription') }],
+  })
 </script>
 
 <template>
@@ -12,20 +17,31 @@ const { tm, rt } = useI18n()
         </CardContent>
         <CardContent :title="$t('studiesTitle')">
           <ul>
-            <StudiesCard v-for="item in tm('studies')" :key="item" :title="$rt(item.title)" :date="$rt(item.date)"
-              :location="$rt(item.location)" />
+            <StudiesCard
+              v-for="item in tm('studies')"
+              :key="item"
+              :title="$rt(item.title)"
+              :date="$rt(item.date)"
+              :location="$rt(item.location)"
+            />
           </ul>
         </CardContent>
         <CardContent :title="$t('languagesTitle')">
           <ul>
-            <li v-for="item in tm('languages')" :key="item">
+            <li
+              v-for="item in tm('languages')"
+              :key="item"
+            >
               {{ rt(item.name) }}: {{ rt(item.level) }}
             </li>
           </ul>
         </CardContent>
         <CardContent :title="$t('hobbiesTitle')">
           <ul class="hobbies__list">
-            <li v-for="item in tm('hobbies')" :key="item">
+            <li
+              v-for="item in tm('hobbies')"
+              :key="item"
+            >
               <HobbyCard :hobby="rt(item.name)" />
             </li>
           </ul>
@@ -37,14 +53,26 @@ const { tm, rt } = useI18n()
         </CardContent>
         <CardContent :title="$t('projectsTitle')">
           <ul class="projects__list">
-            <li v-for="item in tm('projects')" :key="item">
-              <a :href="rt(item.name)" target="_blank">{{ rt(item.name) }}</a>
+            <li
+              v-for="item in tm('projects')"
+              :key="item"
+            >
+              <a
+                :href="rt(item.name)"
+                target="_blank"
+                >{{ rt(item.name) }}</a
+              >
             </li>
           </ul>
         </CardContent>
         <CardContent :title="$t('skillsTitle')">
           <ul class="skills__list">
-            <li v-for="item in tm('skills')" :key="item">{{ rt(item.name) }}</li>
+            <li
+              v-for="item in tm('skills')"
+              :key="item"
+            >
+              {{ rt(item.name) }}
+            </li>
           </ul>
         </CardContent>
       </main>
@@ -53,49 +81,49 @@ const { tm, rt } = useI18n()
 </template>
 
 <style>
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-header,
-.content {
-  width: 100%;
-  max-width: 1080px;
-  margin: 1rem 0;
-}
+  header,
+  .content {
+    width: 100%;
+    max-width: 1080px;
+    margin: 1rem 0;
+  }
 
-.content {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 4rem;
-}
+  .content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+  }
 
-aside,
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  aside,
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-.hobbies__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
+  .hobbies__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
 
-.projects__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  font-size: 0.8rem;
-}
+  .projects__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
 
-.skills__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-}
+  .skills__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
 </style>
