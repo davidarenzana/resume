@@ -1,7 +1,7 @@
 <template>
   <div class="topheader">
     <LangSwitcher />
-    <ColorSwitcher />
+    <!-- <ColorSwitcher /> -->
   </div>
 </template>
 
