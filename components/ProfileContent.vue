@@ -6,7 +6,6 @@
 <template>
   <div>
     <div class="profilecontent__list">
-      <p>{{ `tel:${t('phoneNoSpaces')}` }}</p>
       <a :href="`tel:${t('phoneNoSpaces')}`"
         ><BaseTextIcon
           icon="phone"
