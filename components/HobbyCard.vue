@@ -8,7 +8,7 @@
   <div class="hobbycard">
     <div class="hobbycard__icon">
       <img
-        :src="`icon-${hobby}.svg`"
+        :src="`/icons/icon-${hobby}.svg`"
         :alt="hobby"
         height="36"
         width="36"

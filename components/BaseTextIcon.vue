@@ -8,7 +8,7 @@
 <template>
   <div class="baseTextIcon__container">
     <img
-      :src="`icon-${icon}.svg`"
+      :src="`/icons/icon-${icon}.svg`"
       :alt="text"
       width="18"
       height="18"

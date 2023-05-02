@@ -14,7 +14,7 @@
           <h3 class="color-blue">{{ rt(item.company) }}</h3>
           <div>
             <img
-              src="icon-line-dark.svg"
+              src="/icons/icon-line-dark.svg"
               width="32"
               height="32"
             />

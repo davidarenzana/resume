@@ -4,7 +4,7 @@
     <div class="footer__content">
       <p>©2023, made with vue</p>
       <img
-        src="vue-logo.svg"
+        src="/icons/vue-logo.svg"
         alt="Vue Logo"
         width="18"
         height="18"
