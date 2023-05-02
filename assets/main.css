@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
+
+html, body, div, span,
+h1, h2, h3, p,
+a, img, ul, li,
+article, aside, footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+
 :root {
   --blue-color: #157698;
   --orange-color: #ed9e7d;
@@ -73,6 +97,7 @@ h2 {
   text-transform: uppercase;
   font-size: 2rem;
   color: var(--blue-color);
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -117,7 +142,7 @@ ul {
 }
 
 .dark  * {
-  color: #fff;
+  color: #d2d2d2;
   background-color: #000;
 }
 

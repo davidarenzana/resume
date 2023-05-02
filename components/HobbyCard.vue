@@ -29,7 +29,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px dotted var(--blue-color);
+      border: 1px dashed var(--blue-color);
       border-radius: 36px;
       width: 72px;
       height: 72px;

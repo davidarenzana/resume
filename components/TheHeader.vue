@@ -53,6 +53,7 @@
     grid-template-columns: 1fr;
     align-items: center;
     gap: 4rem;
+    margin-top: 1.5rem;
   }
 
   @media (min-width: 768px) {

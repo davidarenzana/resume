@@ -88,13 +88,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0.5rem;
   }
 
   header,
   .content {
     width: 100%;
     max-width: 1080px;
-    margin: 1rem 0;
+    margin: 1rem 0.8rem;
   }
 
   .content {
@@ -113,7 +114,7 @@
   main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .hobbies__list {

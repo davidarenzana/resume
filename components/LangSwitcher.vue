@@ -20,19 +20,19 @@
 
 <style lang="scss" scoped>
   .langswitcher {
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1080px;
 
     a {
       text-decoration: none;
       padding: 0 1rem;
+      font-weight: 400;
     }
 
     a + a {
       border-left: 1px solid var(--lighter-gray-color);
-    }
-    :hover {
-      font-weight: 400;
     }
   }
   .active {
