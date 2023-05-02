@@ -6,45 +6,33 @@
 <template>
   <div>
     <div class="profilecontent__list">
+      <p>{{ t('profileDescription') }}</p>
       <a :href="`tel:${t('phoneNoSpaces')}`"
         ><BaseTextIcon
           icon="phone"
           :text="t('phone')"
       /></a>
 
-      <a :href="`mailto:${t('email')}`">
+      <a :href="`tel:${t('phoneNoSpaces')}`">
         <BaseTextIcon
           icon="email"
           :text="t('email')"
         />
       </a>
-      <address>
-        <BaseTextIcon
-          icon="address"
-          :text="t('address')"
-        />
-        <BaseTextIcon
-          icon="location"
-          :text="location"
-        />
-      </address>
+      <BaseTextIcon
+        icon="address"
+        :text="t('address')"
+      />
+      <BaseTextIcon
+        icon="location"
+        :text="location"
+      />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
   .profilecontent__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    > a {
-      text-decoration: none;
-    }
-  }
-
-  address {
-    font-style: normal;
     display: flex;
     flex-direction: column;
     gap: 1rem;
