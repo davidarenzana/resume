@@ -81,9 +81,9 @@
         { "name": "Desenvolupament frontend" },
         { "name": "Desenvolupament web wordpress" },
         { "name": "Desenvolupament templates - modules hubspot" },
-        { "name": "Auditories SEO tècnico" },
+        { "name": "Auditories SEO tècnic" },
         { "name": "Implementació GA4 - GTM" },
-        { "name": "Formació wordpress a clients" }
+        { "name": "Formacions wordpress" }
       ]
     },
     {
@@ -92,7 +92,7 @@
       "date": "2011 - 2017",
       "tasks": [
         {
-          "name": "Gestió web. Disseny i maquetació de llibres, preparació i seguiments de comandes, facturació"
+          "name": "Gestió web. Disseny i maquetació de llibres, preparació i seguiment de comandes, facturació"
         }
       ]
     },
